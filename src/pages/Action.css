@@ -110,7 +110,28 @@ video{
 .carousel-caption{
 
     position: absolute;
-  
-    bottom: 1.25rem;
+     bottom: 1.25rem;
     color: black;
+  }
+  .carousel-indicators{
+    top: 100%;
+  }
+
+  .carousel-indicators{
+    display: none;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:  #CDDC39;
+  }
+  .carousel-control-prev-icon {
+    border: 6px solid whitesmoke;
+    border-radius: 54px;
+  }
+  .carousel-control-next-icon {
+
+    margin-right: 99px;
+    border: 6px solid whitesmoke;
+    border-radius: 50px;
   }
