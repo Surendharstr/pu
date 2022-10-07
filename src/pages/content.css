@@ -1,0 +1,51 @@
+.video-content{
+    width: 400px;
+    height: 400px;
+}
+
+
+video{
+
+    position: absolute;
+    right:0;
+    top: 0;
+    z-index: -1;
+       
+ }
+ .hello{
+   margin-top: 40px;
+    height: 170px;
+    background-image: url(../assets/vector.png);
+    background-color: #EFF2CD;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+ }
+.ola-rate{
+    color: #777967;
+    margin-top: 5px;
+    font-size: 1.25em;
+}
+.vl {
+    position: absolute;
+    border-left: 1px solid #777967;;
+    height: 150px;
+    position: absolute;
+    left: 48%;
+    margin-top: -114px;
+    
+    
+  }
+  .ad-1{
+    font-weight: 800;
+  }
+  .ad-2{
+    font-size: 1.50em;
+    color: #777967;
+  }
+ .ad-btn{
+    background-color: #000000;
+    color: #ABD830;
+    padding: 10px;
+    margin: 60px;
+    font-size: 1.20em;
+ }

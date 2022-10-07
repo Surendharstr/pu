@@ -3,7 +3,8 @@ body{
     /* background-image: url(../src/assets/auto.png); */
     /* background-repeat: no-repeat; */
     background-color: #e5e5e5;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100vh;
-    overflow: hidden;
+  
    
 }

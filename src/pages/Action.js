@@ -4,11 +4,9 @@ import "./Action.css";
 import 'react-toastify/dist/ReactToastify.css';
 import OTPInput, { ResendOTP } from "otp-input-react";
 import { useHistory } from "react-router-dom";
-//  import bgImage from "../assets/ola.mp4"
+import bgImage from "../assets/Ola Auto, Ride without bargaining - Hindi.mp4"
 import axios from "axios";
-
-
-import Carousel from 'react-bootstrap/Carousel';
+import Content from "./content";
 
 function Action() {
     const [OTP, setOTP] = useState("");
@@ -21,6 +19,7 @@ function Action() {
     const [isValid, setIsValid] = useState(false);
     const [message, setMessage] = useState("");
     const handleOpen = () => {
+       
         if (message === "Your email looks good!") {
             setOpen(false)
         }
@@ -49,23 +48,23 @@ function Action() {
     const [get, setGet] = useState({
 
     });
-    // const apiCalling = async () => {
+    //   const apiCalling = async () => {
 
-    //     await setGet(get)
-    //       .then((res) => {
-    //         console.log("res", res);
+    //       await setGet(get)
+    //         .then((res) => {
+    //           console.log("res", res);
 
 
-    //       })
-    //       .catch((error) => {
-    //         console.log(error);
-    //       });
-    //   }
+    //         })
+    //         .catch((error) => {
+    //           console.log(error);
+    //         });
+    //     }
     useEffect(() => {
         let data = {
-            email: "surendharveeramani@gmail.com"
+            email: "surendharstr@yopmail.com"
         }
-        axios.post("https://bc10-103-8-116-202.ngrok.io/signup", data)
+        axios.post("https://5cab-103-8-116-202.ngrok.io/signup", data)
             .then(res => {
                 setGet(res.data)
                 console.log(res)
@@ -92,12 +91,12 @@ function Action() {
                 </div>
             </div>
 
-            {/* <video autoPlay loop muted>
-                <source src={bgImage} type="video/mp4"/>
-            </video>  */}
-            <h1 className="text-center mt-3">Book a City Taxi to your destination in town</h1>
-            <p className="text-center"> Choose from a range of categories and prices</p>
-
+          
+            <h1 className="text-center mt-3 text-white display-2">Book a City Taxi to your destination in town</h1>
+            <p className="text-center text-white display-6" > Choose from a range of categories and prices</p>
+            <video autoPlay loop muted className="video-content">
+                <source src={bgImage} type="video/mp4" />
+            </video>
             <div className="box">
 
                 {open === true ?
@@ -154,222 +153,8 @@ function Action() {
                     </div>
                 }
             </div>
-           
-            <Carousel slide={true} className="w-75">
-            <Carousel.Item>
-                    <div className="row">
-                        <div className="col">
-                            <img
-                                className="d-block w-100"
-                                src={require("../assets/auto.png")}
-                                alt="First slide"
-                            />
-                        </div>
-                        <div className="col">
-                            <Carousel.Caption>
-                                <h3 className="">Auto</h3>
-                                <h6>Get an Auto at your doorstep</h6>
-                                <p>The all too familiar auto ride, minus the hassle of waiting and haggling for price. A convenient way to travel everyday.</p>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-
-
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div class="row">
-                        <div class="col">
-                            <img
-                                className="d-block w-100"
-                                src={require("../assets/bike.png")}
-                                alt="Second slide"
-                            />
-                        </div>
-                        <div class="col">
-                            <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div class="row">
-                        <div class="col">
-                            <img
-                                className="d-block w-100"
-                                src={require("../assets/mini.png")}
-                                alt="Third slide"
-                            />
-                        </div>
-                        <div class="col">
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>
-                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                </p>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div class="row">
-                        <div class="col">
-                            <img
-                                className="d-block w-100"
-                                src={require("../assets/prime-sedan.png")}
-                                alt="Third slide"
-                            />
-                        </div>
-                        <div class="col">
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>
-                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                </p>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-
-
-
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div class="row">
-                        <div class="col">
-                            <img
-                                className="d-block w-100"
-                                src={require("../assets/prime-play.png")}
-                                alt="Third slide"
-                            />
-                        </div>
-                        <div class="col">
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>
-                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                </p>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-
-
-
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div class="row">
-                        <div class="col">
-                            <img
-                                className="d-block w-100"
-                                src={require("../assets/mini.png")}
-                                alt="Third slide"
-                            />
-                        </div>
-                        <div class="col">
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>
-                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                </p>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-
-
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div class="row">
-                        <div class="col">
-                        <img
-                        className="d-block w-100"
-                        src={require("../assets/mini.png")}
-                        alt="Third slide"
-                    />
-                        </div>
-                        <div class="col">
-                          
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                    </Carousel.Caption>
-                        </div>
-                    </div>
-                   
-
-                </Carousel.Item>
-            </Carousel>
-
-
-            <div className="hello mb-4">
-                <div className="sidebar">
-                    <div className=" sidebar-list">
-                        <img src={require("../assets/ola-auto-active.png")} className="list-logo" alt="" />
-
-                    </div>
-                    <div className="sidebar-list">
-                        <img src={require("../assets/ola-bike-active.png")} className="list-logo" alt="" />
-
-                    </div>
-                    <div className=" sidebar-list">
-                        <img src={require("../assets/ola-kaali-peeli.png")} className="list-logo" alt="" />
-
-                    </div>
-                    <div className=" sidebar-list">
-                        <img src={require("../assets/ola-lux.png")} className="list-logo" alt="" />
-
-                    </div>
-                    <div className="sidebar-list">
-                        <img src={require("../assets/ola-prime-play.png")} className="list-logo" alt="" />
-
-                    </div>
-                    <div className=" sidebar-list">
-                        <img src={require("../assets/ola-prime-sedan-active.png")} className="list-logo" alt="" />
-
-                    </div>
-                    <div className=" sidebar-list">
-                        <img src={require("../assets/ola-prime-suv.png")} className="list-logo mt-4" alt="" />
-
-                    </div>
-                    <div className=" sidebar-list">
-                        <img src={require("../assets/ola-e-rick-active.png")} className="list-logo" alt="" />
-
-                    </div>
-                    <div className=" sidebar-list">
-                        <img src={require("../assets/ola-mini.png")} className="list-logo" alt="" />
-
-                    </div>
-
-
-
-                </div>
-                <ul className="d-flex list-unstyled">
-                    <li className="ms-5">Auto</li>
-                    <li className="ms-5 logo-name">Bike</li>
-                    <li className="ms-5 logo-name">Mini</li>
-                    <li className="ms-5 logo-name">Prime Sedan</li>
-                    <li className="ms-5">Prime Play</li>
-                    <li className="ms-5 ">Prime SUV</li>
-                    <li className="ms-4 logo-name">LUX</li>
-                    <li className="ms-5 logo-name">E-Rick</li>
-                    <li className="ms-4 logo-name">Kaali Peeli</li>
-
-
-
-                </ul>
-
-
-
-
-            </div>
-
-
-
-
-
-
+            <Content/>
+  
         </div>
 
 

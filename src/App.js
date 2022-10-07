@@ -6,7 +6,7 @@ import {
 
 } from 'react-router-dom';
 import CustDetails from './pages/CustDetails';
-import Location from './pages/Location';
+import Location from './pages/map/Location';
 
 
 
