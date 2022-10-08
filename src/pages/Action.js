@@ -154,9 +154,9 @@ function Action() {
                     </div>
                 }
             </div>
-           
-            <Carousel slide={true} className="w-75">
-            <Carousel.Item>
+
+            <Carousel slide={true}>
+                <Carousel.Item>
                     <div className="row">
                         <div className="col">
                             <img

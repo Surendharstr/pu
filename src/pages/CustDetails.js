@@ -7,11 +7,6 @@ function CustDetails() {
 
     const history = useHistory();
 
-     const handleFirstname = (e) =>{
-       console(e.target.value)
-
-     }
-
 
     const handleLoaction =()=>{
         history.push ("/Location");
@@ -24,7 +19,7 @@ function CustDetails() {
             <form>
                 <div class="row">
                     <div class="col">
-                        <input type="text" className="form-control" placeholder="First name" onChange={handleFirstname}/>
+                        <input type="text" className="form-control" placeholder="First name" required />
                     </div>
                     <div class="col">
                         <input type="text" className="form-control" placeholder="Last name" />
@@ -61,7 +56,7 @@ function CustDetails() {
                     <input type="text" class="form-control" id="inputZip"/>
                 </div>
             </div>
-            <button type="submit" class="btn btn-success mt-2 w-100" onClick={handleLoaction}>Continue</button>
+            <button type="submit" class="btn btn-success mt-2 w-50" onClick={handleLoaction}>Continue</button>
 
      </div>
     )
