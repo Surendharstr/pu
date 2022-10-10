@@ -1,0 +1,59 @@
+.signin{
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+    margin: 0;
+    padding: 0;
+    background-color: white;
+   background-image: url("../../assets//Rider_Home_bg_desktop2x.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  
+}
+.signin-detail{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+background-color: #ffff;
+border: 5px solid #ffff;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-radius: 15px;
+
+
+}
+.signin-icone{
+    font-size: x-large;
+}
+.signin-icone:hover{
+    color: #C81FCA;
+}
+.input-data{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    outline-width: 0;
+}
+span{
+    color: #8E9FC3;
+}
+.signin-btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 390px;
+   background-color: #C81FCA;
+   border: transparent;
+   color: #ffff;
+   font-size: 20px;
+   font-weight: 400;
+
+}
+.signin-btn:hover{
+    background-color: #4B505D;
+
+}

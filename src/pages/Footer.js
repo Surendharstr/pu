@@ -58,7 +58,7 @@ function Footer() {
                     <div class="col">
                         <div class="row">
                             <div class="col">
-                                <img src={require("../assets/ola-best-driver.png")} className="w-50 ms-5" alt="" />
+                                <img src={require("../assets/ola-best-driver.png")} className="w-50 ms-5 " alt="" />
                                 </div>
                             <div class="col">
                                 <h5>Top Rated Driver-Partners</h5>

@@ -15,6 +15,7 @@
 
 }
 .card{
+    height: 60vh;
     transition: 0.5s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;

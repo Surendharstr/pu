@@ -23,6 +23,43 @@ function BodyText() {
                             <p class="card-text">
                                 The perfect way to get through your everyday travel needs. City taxis are available 24/7 and you can book and travel in an instant. With rides starting from as low as Rs. 6/km, you can choose from a wide range of options! You can also opt to do your bit for the environment with Ola Share!
                             </p>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src={require("../assets/ct_1.png")} class="ms-3 w-75" alt="..." />
+
+                                        </div>
+                                        <div class="col">
+                                            <p>AC Cabs</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src={require("../assets/ct_2.png")} class="ms-2 w-100" alt="..." />
+
+                                        </div>
+                                        <div class="col">
+                                            <p>Pocket Friendly</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src={require("../assets/ct_3.png")} class="ms-2 w-100" alt="..." />
+
+                                        </div>
+                                        <div class="col">
+                                            <p>Cashless Rides</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -38,6 +75,38 @@ function BodyText() {
                             <p class="card-text">
                                 Ride out of town at affordable one-way and round-trip fares with Ola’s intercity travel service. Choose from a range of AC cabs driven by top partners, available in 1 hour or book upto 7 days in advance. We have you covered across India with presence in 90+ cities with over 500 one way routes.
                                 .</p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                        <img src={require("../assets/os_1.png")} class="ms-3 w-75" alt="..." />
+                                        </div>
+                                        <div class="col">
+                                        <p>One-Way Trips</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                        <img src={require("../assets/os_2.png")} class="ms-2 w-100" alt="..." />
+                                        </div>
+                                        <div class="col">
+                                        <p>Advance Booking</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                        <img src={require("../assets/os_3.png")} class="ms-2 w-100" alt="..." />
+                                        </div>
+                                        <div class="col">
+                                             <p>Safe Rides</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -53,6 +122,38 @@ function BodyText() {
                             <p class="card-text">
                                 With Ola Rentals you get a cab at your disposal. So be it a  day long business meeting, a shopping trip with your friends or just a day out in a new city, we have you covered. Packages start at 1 hour and can be extended upto 12 hours!
                             </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                        <img src={require("../assets/rental_1.png")} class="ms-2 w-100" alt="..." />
+                                        </div>
+                                        <div class="col">
+                                             <p>Hourly Packages</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                        <img src={require("../assets/rental_2.png")} class="ms-2 w-100" alt="..." />
+                                        </div>
+                                        <div class="col">
+                                             <p>Multiple Stops</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                        <img src={require("../assets/rental_3.png")} class="ms-2 w-100" alt="..." />
+                                        </div>
+                                        <div class="col">
+                                             <p>Top-Rated Partners</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -64,13 +165,13 @@ function BodyText() {
                 <div class=" card-slide">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src={require("../assets/00000000368.jpg")}class="img-fluid " alt="..."/>
+                            <img src={require("../assets/00000000368.jpg")} class="img-fluid " alt="..." />
                         </div>
                         <div class="col-md-8">
                             <div class="ms-5">
                                 <h5 class="card-title">Cabs for Every Pocket</h5>
                                 <p class="card-text">From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every pocket</p>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -78,13 +179,13 @@ function BodyText() {
                 <div class=" card-slide mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src={require("../assets/00000000371.jpg")} class="img-fluid " alt="..."/>
+                            <img src={require("../assets/00000000371.jpg")} class="img-fluid " alt="..." />
                         </div>
                         <div class="col-md-8">
                             <div class="ms-5">
                                 <h5 class="card-title">In Cab Entertainment</h5>
                                 <p class="card-text">Play music, watch videos and a lot more with Ola Play! Also stay connected even if you are travelling through poor network areas with our free wifi facility.</p>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -92,13 +193,13 @@ function BodyText() {
                 <div class=" card-slide  mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src={require("../assets/00000000370.jpg")}class="img-fluid" alt="..."/>
+                            <img src={require("../assets/00000000370.jpg")} class="img-fluid" alt="..." />
                         </div>
                         <div class="col-md-8">
                             <div class="ms-5">
                                 <h5 class="card-title">Secure and Safer Rides</h5>
                                 <p class="card-text">Verified drivers, an emergency alert button, and live ride tracking are some of the features that we have in place to ensure you a safe travel experience.</p>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -106,13 +207,13 @@ function BodyText() {
                 <div class=" card-slide mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src={require("../assets/00000000372.jpg")} class="img-fluid " alt="..."/>
+                            <img src={require("../assets/00000000372.jpg")} class="img-fluid " alt="..." />
                         </div>
                         <div class="col-md-8">
                             <div class="ms-5">
                                 <h5 class="card-title">Cashless Rides</h5>
                                 <p class="card-text">Now go cashless and travel easy. Simply recharge your Ola money or add your credit/debit card to enjoy hassle free payments.</p>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -121,7 +222,7 @@ function BodyText() {
 
 
             </div>
-            <Slider/>
+            <Slider />
 
         </div>
     )

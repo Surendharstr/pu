@@ -1,7 +1,5 @@
 import React from "react"
 
-
-import bgImage from "../assets/Ola Auto, Ride without bargaining - Hindi.mp4"
 import BodyText from "./BodyText";
 import "./content.css";
 
@@ -10,11 +8,7 @@ function Content() {
 
  return (
         <div>
-            <div className="video-content" >
-                <video autoPlay loop muted >
-                    <source src={bgImage} type="video/mp4" />
-                    </video>
-            </div>
+         
             <div class="container hello border">
                 <div class="row">
                     <div class="col">
@@ -28,7 +22,7 @@ function Content() {
                     <div class="col">
                         <h3 className="mt-4 ad-1">The best scooter ever.</h3>
                         <p className="ad-2">Experience the revolutionary</p>
-                        <p className="ad-2 ">Ola S1 at your doorstep</p>
+                        <p className="ad-2">Ola S1 at your doorstep</p>
                  
                     </div>
                     <div class="col">
