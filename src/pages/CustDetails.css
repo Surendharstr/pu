@@ -1,5 +1,4 @@
 .Profile{
-
     position: absolute;
     top: 40%;
     left: 50%;
@@ -9,4 +8,14 @@
     border: 5px solid #ffff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
+}
+.register-btn{
+    background-color: rgb(236, 210, 92);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid transparent;
+}
+.register-btn:hover{
+    background-color: antiquewhite;
 }

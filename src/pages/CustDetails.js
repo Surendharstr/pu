@@ -1,69 +1,108 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./CustDetails.css";
+import { FiMail } from "react-icons/fi";
+import { BsFillLockFill, BsFillPersonFill } from "react-icons/bs";
+
 
 
 function CustDetails() {
 
     const history = useHistory();
-
-     const handleFirstname = (e) =>{
-       console(e.target.value)
-
-     }
-
-
-    const handleLoaction =()=>{
-        history.push ("/Location");
+      const handleLoaction = (e) => {
+        e.preventDefault();
+        history.push("/Location");
 
     }
+const[state,setState] = useState({
+    email:"",
+    password:"",
+    rePassword:"",
+    firstName:"",
+    LastName:""
+
+})
+
+const handleEmail = (e) =>{
+    console.log(e.target.value)
+    const{name,value} = e.target;
+    setState({...state,[name]:value})
+    }
+
+
+    
     return (
         <div className="Profile">
-            <h4 className="text-center">Customer Details:</h4>
-            <labe>Full Name:</labe><br></br>
+            <h4 className="text-center">Registration Form</h4>
+
             <form>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" className="form-control" placeholder="First name" onChange={handleFirstname}/>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text h-100"><FiMail /></div>
                     </div>
-                    <div class="col">
-                        <input type="text" className="form-control" placeholder="Last name" />
-                    </div>
+                    <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Email" name="email" value={state.email} onChange={handleEmail} />
                 </div>
+                <div class="input-group mt-4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text h-100"><BsFillLockFill /></div>
+                    </div>
+                    <input type="password" class="form-control" id="inlineFormInputGroup" placeholder="password" name="password" value={state.password} onChange={handleEmail}/>
+                </div>
+                <div class="input-group mt-4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text h-100"><BsFillLockFill /></div>
+                    </div>
+                    <input type="password" class="form-control" id="inlineFormInputGroup" placeholder="Re-type-password" name="rePassword" value={state.rePassword} onChange={handleEmail}/>
+                </div>
+                <div className="row mt-3">
+                    <div className="col">
+                        <div class="input-group mt-1">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text h-100"><BsFillPersonFill /></div>
+                            </div>
+                            <input type="Text" class="form-control" id="inlineFormInputGroup" placeholder="First Name" name="firstName" value={state.firstName} onChange={handleEmail}/>
+                        </div>
+
+                    </div>
+                    <div className="col">
+                        <div class="input-group mt-1">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text h-100"><BsFillPersonFill /></div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Last Name" name="LastName" value={state.LastName} onChange={handleEmail} />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-check form-check-inline mt-4 ms-2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"  value={state.Male} onChange={handleEmail} />
+                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"   value={state.Female} onChange={handleEmail}/>
+                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+                <select class="form-select mt-3" aria-label="Default select example">
+                    <option selected>select your state</option>
+                    <option value="1">Tamilnadu</option>
+                    <option value="2">Andrapradesh</option>
+                    <option value="3">Kerala</option>
+                    <option value="3">Karnataka</option>
+                </select>
+                <div class="form-check mt-3" >
+                    <input class="form-check-input" type="checkbox"  id="flexCheckChecked"  name="checkbox" value={state.checkbox} onChange={handleEmail} />
+                        <label class="form-check-label" for="flexCheckChecked">
+                           I agree with terms and conditions
+                        </label>
+                </div>
+               <button type="button" className="w-100 register-btn" onClick={handleLoaction}>Register</button>
+
             </form>
-            <select className="form-control mt-3" id="exampleFormControlSelect1">
-                <option>Gender</option>
-                <option>Male</option>
-                <option>Female</option>
-            </select>
 
-            <label for="inputAddress">Address:</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
-            <label for="inputAddress2">Address 2:</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"></input>
-            <div class="form-row">
-                <div class="form-group col-md-6 mt-2">
-                    <label for="inputCity">City:</label>
-                    <input type="text" class="form-control" id="inputCity" />
-                </div>
-                <div class="form-group col-md-4 mt-2">
-                    <label for="inputState">State/Union territories:</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>TamilNadu</option>
-                        <option>Puducherry</option>
-                        <option>Kerala</option>
-                        <option>Andhra Pradesh</option>
-                        <option>Karnataka</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-2 mt-2">
-                    <label for="inputZip">Zip:</label>
-                    <input type="text" class="form-control" id="inputZip"/>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-success mt-2 w-100" onClick={handleLoaction}>Continue</button>
 
-     </div>
+
+
+        </div>
     )
 }
 export default CustDetails
